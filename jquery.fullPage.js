@@ -300,7 +300,7 @@
 					createSlimScrollingHandler();
 				}
 				//after DOM and images are loaded
-				$(window).on('load', createSlimScrollingHandler);
+				setTimeout(createSlimScrollingHandler,100);
 			}else{
 				$.isFunction( options.afterRender ) && options.afterRender.call( this);
 			}
@@ -336,9 +336,9 @@
 			}
 
 
-			$(window).on('load', function() {
+			setTimeout(function() {
 				scrollToAnchor();
-			});
+			}),100);
 
 		});
 
