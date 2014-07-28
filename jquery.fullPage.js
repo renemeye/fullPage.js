@@ -338,7 +338,7 @@
 
 			setTimeout(function() {
 				scrollToAnchor();
-			}),100);
+			},100);
 
 		});
 
